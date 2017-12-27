@@ -1,0 +1,17 @@
+<br><br><br><br>
+<div *ngIf="user">
+    <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">{{user.name}}</h1>
+          <p>This is your Profile</p>
+          <ul class="list-group">
+            <li class="list-group-item">Username: {{ user.username }}</li>
+            <li class="list-group-item">Email: {{ user.email }}</li>
+
+          </ul>
+          <br>
+          <p><a class="btn btn-primary btn-lg"  [routerLink]="['/dashboard']" role="button">Dashboard</a></p>
+
+        </div>
+      </div>
+</div>
